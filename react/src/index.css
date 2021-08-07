@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--var-gray-1);
+  box-sizing: border-box;
 }
 
 code {
@@ -21,7 +21,7 @@ code {
   --var-color-tertiary: #f37337;
   --var-color-tertiary-dark: #862e06;
   --var-color-tertiary-hover: #db662f;
-  --var-gray-1: #f7f4f4;
+  --var-gray-1: #ececec;
   --var-gray-2: #cecbcb;
   --var-gray-3: #7a7979;
   --var-dark: #333;
