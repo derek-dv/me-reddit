@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--var-gray-1);
 }
 
 code {
@@ -17,10 +18,35 @@ code {
   --var-color-primary: #014d50;
   --var-color-secondary: #9af7fa;
   --var-color-hover: #046e72;
-  --var-color-tertiary: #e65b1a;
+  --var-color-tertiary: #f37337;
+  --var-color-tertiary-dark: #862e06;
   --var-color-tertiary-hover: #db662f;
-  --var-gray-1: #d1cfcf;
-  --var-gray-2: #918f8f;
+  --var-gray-1: #f7f4f4;
+  --var-gray-2: #cecbcb;
   --var-gray-3: #7a7979;
   --var-dark: #333;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.px-3 {
+  padding: 0 3rem;
 }
