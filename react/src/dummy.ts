@@ -1,4 +1,5 @@
 interface Post {
+  id: number;
   title: String;
   createdAt: String;
   author: String;
@@ -12,6 +13,7 @@ interface Data {
 const dummies: Data = {
   posts: [
     {
+      id: 1,
       author: "Derek David",
       title: "First dummy post for reddit",
       createdAt: "August 14",
@@ -24,8 +26,10 @@ const dummies: Data = {
       createdAt: "August 1",
       downvotes: 0,
       upvotes: 10,
+      id: 2,
     },
     {
+      id: 3,
       author: "John Doe",
       title: "First dummy post for reddit",
       createdAt: "August 4",
@@ -33,6 +37,7 @@ const dummies: Data = {
       upvotes: 0,
     },
     {
+      id: 4,
       author: "Derek David",
       title: "First dummy post for reddit",
       createdAt: "August 14",
