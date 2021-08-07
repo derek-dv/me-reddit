@@ -1,0 +1,9 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "API for the clone",
+  "main": "index.js",
+  "author": "Derek David",
+  "license": "MIT",
+  "private": false
+}
