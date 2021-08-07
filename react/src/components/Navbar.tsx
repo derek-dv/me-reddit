@@ -1,5 +1,3 @@
-const Navbar: React<any> = () => (
-    <div>Hello</div>
-)
+const Navbar: React.FC<any> = () => <div className="py-3">Hello</div>;
 
-export default Navbar
+export default Navbar;
