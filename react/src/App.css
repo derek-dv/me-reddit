@@ -2,7 +2,6 @@
   width: 70%;
   margin: 0 auto;
   background-color: var(--var-gray-1);
-  height: 100vh;
 }
 
 @media(max-width: 400px){
@@ -10,4 +9,9 @@
     width: 100%;
     text-align: center;
   }
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
 }

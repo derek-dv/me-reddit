@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    padding: 1rem;
+    background-color: var(--var-color-secondary);
+    flex-direction: column;
+    align-items: center;
+    color: var(--var-color-hover);
+}
+
+.footer__links > a {
+    padding: 0 0.5rem;
+    color: var(--var-color-primary);
+}
