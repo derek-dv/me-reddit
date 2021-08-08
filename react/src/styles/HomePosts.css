@@ -1,0 +1,26 @@
+.posts {
+    display: block;
+    margin-top: 1rem;
+    background-color: #fff;
+}
+
+.post {
+    border: 1px solid var(--var-color-tertiary-dark);
+    color: var(--var-color-primary);
+}
+
+.post__top {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post__vote {
+    float: left;
+}
+
+.post__title {
+    float: right;
+}
+.post__title > h2 {
+    font-size: medium;
+}
