@@ -1,0 +1,27 @@
+.auth {
+    height: 90vh;
+    text-align: left;
+}
+.auth__form > form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.auth__heading {
+    font-size: large;
+    padding: 1.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.auth__field {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth__field > * {
+    padding: 0.5rem;
+}
