@@ -1,9 +1,10 @@
 import { IconButton } from "@material-ui/core";
 import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
-import React from "react";
+import React, { useState } from "react";
 import { Post } from "../dummy";
 
 const HomePost: React.FC<Post> = (props) => {
+  const [vote, setVote] = useState(props.votes ? props.votes : "0");
   return (
     <div className="post">
       <div className="post__vote">

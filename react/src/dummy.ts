@@ -1,3 +1,11 @@
+export interface User {
+  username: string;
+  id: number;
+  password: string;
+  email: string;
+  createdAt?: string;
+}
+
 export interface Post {
   id: number;
   title: String;
@@ -8,6 +16,7 @@ export interface Post {
 }
 interface Data {
   posts: Post[];
+  users: User[];
 }
 
 const dummies: Data = {
@@ -19,7 +28,7 @@ const dummies: Data = {
       content:
         "Aenean turpis primis volutpat malesuada, pretium condimentum orci. Inceptos nullam ut himenaeos quisque luctus, leo egestas. Velit ullamcorper justo augue dolor, himenaeos leo vehicula semper. Dapibus molestie nunc, pharetra sit consequat integer. Sodales vestibulum tempor purus varius sodales, habitasse hendrerit pretium faucibus. Eu commodo ad id praesent, dictum varius sapien.",
       createdAt: "August 14",
-      votes: 0
+      votes: 0,
     },
     {
       author: "Derek David",
@@ -47,6 +56,14 @@ const dummies: Data = {
         "Habitasse pellentesque donec in praesent quisque neque, commodo vivamus aliquam sollicitudin. Nulla tincidunt nullam torquent duis. Himenaeos quis sed, praesent pulvinar id etiam. Fusce aenean facilisis nisl risus, ligula id aliquet posuere. Egestas habitant quisque erat faucibus, porttitor libero tortor hendrerit. Fusce sed pellentesque.",
       createdAt: "August 14",
       votes: 9,
+    },
+  ],
+  users: [
+    {
+      id: 1,
+      email: "derek@reddit.com",
+      password: "derek",
+      username: "derek",
     },
   ],
 };

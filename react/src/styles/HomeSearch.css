@@ -34,5 +34,5 @@
 
 .search__button:hover {
   background-color: var(--var-color-tertiary-hover);
-  border: 3px solid var(--var-color-tertiary-dark);
+  border: 1px solid var(--var-color-tertiary);
 }
