@@ -23,5 +23,22 @@
 }
 
 .auth__field > * {
-    padding: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+.auth__field > label {
+    margin-bottom: 0.5rem;
+}
+.auth__button {
+    margin-top: 1rem;
+    background-color: var(--var-color-tertiary);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--var-color-tertiary-dark);
+    border-radius: 0.5rem;
+    transition: all 200ms ease-in;
+}
+
+.auth__button:hover {
+    cursor: pointer;
+    background-color: var(--var-color-tertiary-hover);
 }
