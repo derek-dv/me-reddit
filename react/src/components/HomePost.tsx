@@ -4,17 +4,22 @@ import React, { useState } from "react";
 import { Post } from "../dummy";
 
 const HomePost: React.FC<Post> = (props) => {
-  const [vote, setVote] = useState(props.votes ? props.votes : "0");
+  let [vote, setVote] = useState(props.votes ? props.votes : 0);
+
   return (
     <div className="post">
       <div className="post__vote">
         <>
-          <IconButton onClick={() => alert("hey")} className="spc">
+          <IconButton
+            name="up"
+            onClick={() => setVote(vote + 1)}
+            className="spc"
+          >
             <ArrowUpward fontSize="small" />
           </IconButton>
         </>
-        <p>{props.votes ? props.votes : 0}</p>
-        <IconButton>
+        <p>{vote}</p>
+        <IconButton onClick={() => setVote(vote - 1)}>
           <ArrowDownward fontSize="small" />
         </IconButton>
       </div>

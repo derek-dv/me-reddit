@@ -17,6 +17,7 @@ export interface Post {
 interface Data {
   posts: Post[];
   users: User[];
+  loggedIn?: Boolean;
 }
 
 const dummies: Data = {
@@ -66,5 +67,6 @@ const dummies: Data = {
       username: "derek",
     },
   ],
+  loggedIn: false,
 };
 export default dummies;
