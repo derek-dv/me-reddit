@@ -1,10 +1,21 @@
 import { applyMiddleware, combineReducers, createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
+import { posts } from "./reducers/post";
+import { Post } from "./dummy";
+import { login } from "./reducers/auth/auth";
 
-const initialState = {};
+export interface DefaultState {
+  posts: Post[] | [];
+  user: {}
+}
 
-const reducers = combineReducers({});
+const initialState: DefaultState = {
+  posts: [],
+  user: {}
+};
+
+const reducers = combineReducers({ posts, user: login });
 
 const middleware = [thunk];
 

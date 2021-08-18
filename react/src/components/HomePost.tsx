@@ -1,21 +1,23 @@
 import { IconButton } from "@material-ui/core";
 import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
-import React, { useState } from "react";
-import { Post } from "../dummy";
+import React, { useEffect, useState } from "react";
 
-const HomePost: React.FC<Post> = (props) => {
+const HomePost: React.FC<any> = (props) => {
   const [vote, setVote] = useState(props.votes ? props.votes : 0);
-
+  const [upVote, downVote] = props.handlers;
+  useEffect(() => {
+    setVote(props.votes);
+  }, [props.votes]);
   return (
     <div className="post">
       <div className="post__vote">
         <>
-          <IconButton onClick={() => setVote(vote + 1)} size="small">
+          <IconButton onClick={() => upVote(props.id)} size="small">
             <ArrowUpward fontSize="small" />
           </IconButton>
         </>
         <p>{vote}</p>
-        <IconButton size="small" onClick={() => setVote(vote - 1)}>
+        <IconButton size="small" onClick={() => downVote(props.id)}>
           <ArrowDownward fontSize="small" />
         </IconButton>
       </div>

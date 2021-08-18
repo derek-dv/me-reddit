@@ -31,10 +31,12 @@
 
 .post__head {
   margin: 0;
+  margin-bottom: 0.5rem;
 }
 
 .post hr {
   color: var(--var-gray-2);
+  margin-bottom: 0.5rem;
 }
 
 .post__info {
@@ -50,4 +52,8 @@
 
 .post__info > a:hover {
     text-decoration: underline;
+}
+
+.post__content {
+  padding: 0.5rem 0;
 }

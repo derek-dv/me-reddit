@@ -22,8 +22,14 @@
     flex-direction: column;
 }
 
-.auth__field > * {
-    padding: 0 0.5rem;
+.auth__input {
+    outline: none;
+    border: 1px solid var(--var-color-tertiary-dark);
+    padding: 0.5rem 1rem;
+}
+
+.auth__input--error {
+    border: 2px solid red;
 }
 
 .auth__field > label {
@@ -41,4 +47,10 @@
 .auth__button:hover {
     cursor: pointer;
     background-color: var(--var-color-tertiary-hover);
+}
+
+.auth__error {
+    font-size: smaller;
+    color: red;
+    font-weight: bold;
 }

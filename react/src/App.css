@@ -1,7 +1,6 @@
 .app {
   width: 70%;
   margin: 0 auto;
-  background-color: var(--var-gray-1);
 }
 
 @media(max-width: 400px){
